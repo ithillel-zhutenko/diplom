@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sport"
+    package="ru.sport.gym"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+        android:targetSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -14,12 +14,31 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.sport.MainActivity"
+            android:name="ru.sport.gym.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Encyclopedia"></activity>
+        <activity android:name="Type_muscles">
+            <intent-filter>
+                <action android:name="ru.startandroid.intent.action.showSPIN"/>
+                <action android:name="ru.startandroid.intent.action.showNOGI"/>
+                <action android:name="ru.startandroid.intent.action.showTRICEPS"/>
+                <action android:name="ru.startandroid.intent.action.showBICEPS"/>
+                <action android:name="ru.startandroid.intent.action.showDELTA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="ru.startandroid.intent.action.showGRUD"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="Gym_specification">
+            <intent-filter>
+                <action android:name="ru.startandroid.intent.action.showspecGimLega"/>
+                <action android:name="ru.startandroid.intent.action.showspecRazvodka"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
     </application>
